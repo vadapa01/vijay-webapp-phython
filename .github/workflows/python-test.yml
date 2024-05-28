@@ -8,7 +8,10 @@ on:
 # jobs for performing operations
 jobs:
   python_testing:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest,windows-latest,macos-latest]  
     steps:
-      - name: Checking python version on platform
+      - name: Checking python version on platform ${{ matrix.os }}
         run: python -V
