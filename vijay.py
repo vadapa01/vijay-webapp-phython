@@ -1,6 +1,6 @@
 import time
 
-for i in range(15):
+for i in range(2):
     print("Hello all , welcome to python..!!")
     time.sleep(3)
     print("Welcome to LnB..")
