@@ -7,7 +7,7 @@ on:
 
 # jobs for performing operations
 jobs:
-  python tsting:
+  python_testing:
     runs-on: ubuntu-latest
     steps:
       - name: Checking python version on platform
