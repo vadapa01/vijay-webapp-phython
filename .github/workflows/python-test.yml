@@ -15,3 +15,9 @@ jobs:
     steps:
       - name: Checking python version on platform ${{ matrix.os }}
         run: python -V
+
+      - name: fetching git repo code to runners machine
+        uses: actions/checkout@v4
+        
+      - name: lets run python code on machine ${{ matrix.os }}
+        run: python vijay.py  
