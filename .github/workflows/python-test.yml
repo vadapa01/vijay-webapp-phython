@@ -1,0 +1,14 @@
+name: vijay-webapp python testing
+# Trigger
+on:
+  push:
+    branches:
+      - "main"
+
+# jobs for performing operations
+jobs:
+  python tsting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking python version on platform
+        run: python -V
